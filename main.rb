@@ -15,4 +15,10 @@ def phone_plus_one
   read_contacts.select { |contact| contact[:phone].include? "+1" }
 end
 
-puts phone_plus_one
+#puts phone_plus_one
+
+def email_org
+  read_contacts.select { |contact| contact[:email].include? ".org" }
+end
+
+puts email_org
