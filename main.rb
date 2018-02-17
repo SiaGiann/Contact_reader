@@ -21,4 +21,12 @@ def email_org
   read_contacts.select { |contact| contact[:email].include? ".org" }
 end
 
-puts email_org
+#puts email_org
+
+def count_plus_one
+  phone_plus_one.reduce(0) do |count, contact|
+    count +=1
+  end
+end
+
+puts count_plus_one
